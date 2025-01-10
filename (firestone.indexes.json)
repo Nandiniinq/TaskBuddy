@@ -1,0 +1,18 @@
+
+  //"indexes": [],
+  //"fieldOverrides": []
+
+{
+  "indexes": [
+    {
+      "collectionId": "tasks",
+      "fields": [
+        { "fieldPath": "title", "order": "ASCENDING" },
+        { "fieldPath": "status", "order": "ASCENDING" }
+      ],
+      "queryScope": "COLLECTION"
+    }
+  ],
+  "fieldOverrides": []
+}
+

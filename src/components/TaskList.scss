@@ -1,0 +1,53 @@
+@use 'sass:map';
+@use 'sass:math';
+
+$colors: (
+  "primary": #007bff,
+  "secondary": #6c757d,
+  "background": #f9f9f9,
+  "success": #28a745,
+  "danger": #dc3545
+);
+
+$spacing: 1rem;
+$border-radius: 4px;
+
+.task-list {
+  list-style: none;
+  padding: 0;
+
+  .task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: $spacing;
+    margin-bottom: $spacing;
+    background-color: map.get($colors, "background");
+    border-radius: $border-radius;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .task-text {
+      flex-grow: 1;
+      margin-right: $spacing;
+    }
+
+    button {
+      background-color: map.get($colors, "primary");
+      color: #ffffff;
+      border: none;
+      border-radius: $border-radius;
+      padding: math.div($spacing, 2);
+      font-size: 0.9rem;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: darken(map.get($colors, "primary"), 10%);
+      }
+    }
+  }
+}
+  

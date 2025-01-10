@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600&display=swap');
+
+.login-container {
+    background-color: black; /* Black background */
+    padding: 10px; /* Padding around the container */
+    border-radius: 5px; /* Rounded corners */
+    display: flex; /* Flexbox layout */
+    align-items: center; /* Center items vertically */
+}
+
+.login-container img {
+    width: 30px; /* Set a consistent size for the Google icon */
+    margin-right: 10px; /* Space between icon and button */
+}
+body {
+    font-family: 'Urbanist', sans-serif;
+}
+

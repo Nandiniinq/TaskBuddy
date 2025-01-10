@@ -1,0 +1,232 @@
+/* General Styling for Task Table */
+.task-manager {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0 auto;
+}
+
+/* Filter Bar Container */
+.filter-bar {
+  display: flex;
+  justify-content: space-between; /* Ensure space between left and right content */
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Left side (Category, Date) */
+.filter-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Filter Buttons */
+.filter-left button {
+  padding: 10px 15px;
+  background-color: white;
+  color: black;
+  border: 1px solid #ccc;
+  border-radius: 20px; /* Rounded corners */
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.filter-left button:hover {
+  background-color: #f4f4f4;
+}
+
+/* Filter by text */
+.filter-bar .filter-label {
+  font-size: 16px;
+  font-weight: normal;
+  color: #000;
+  margin-right: 10px; /* Space between text and buttons */
+}
+
+/* Right side (Search Bar) */
+.search-bar {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.search-bar input[type="text"] {
+  width: 250px;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 20px; /* Rounded corners */
+  font-size: 14px;
+  outline: none;
+
+  &:focus {
+    border-color: #007bff;
+  }
+}
+
+/* Task Table */
+.task-table,
+.main-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed; /* Ensures columns are evenly spaced */
+}
+
+.task-table th,
+.task-table td {
+  padding: 12px 15px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.task-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.task-table th,
+.task-table td {
+  width: 20%; /* Set each column to take up equal space */
+}
+
+.task-table {
+  margin-bottom: 15px;
+}
+
+/* Subtable Container */
+.main-table {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.subtable {
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* Subtable Heading */
+.subtable-heading {
+  padding: 12px;
+  background-color: #dddadd;
+  color: black;
+  font-size: 16px;
+  font-weight: normal;
+  text-align: left;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+/* Different Colors for Each Subtable Heading */
+.to-do-heading {
+  background-color: #fac3ff; /* Light Pink for Todo */
+}
+
+.in-progress-heading {
+  background-color: #85d9f1; /* Light Blue for In-Progress */
+}
+
+.completed-heading {
+  background-color: #ceffcc; /* Light Green for Completed */
+}
+
+/* Table Content inside Subtable */
+.subtable td {
+  text-align: center;
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+.subtable button {
+  padding: 5px 10px;
+  background-color: rgb(182, 180, 180);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.subtable button:hover {
+  background-color: darkred;
+}
+
+/* Task Name, Due On, Task Status, Task Category headings for Main Table */
+.task-table th {
+  text-align: left; /* Align column headings to the left */
+}
+
+/* Adjusting layout for task name, due on, task status, task category headings */
+.task-table th,
+.subtable td {
+  word-wrap: break-word; /* Ensure long text wraps */
+}
+
+/* Task Manager Title and View Toggle Styles */
+h2 {
+  margin: 20px 0;
+}
+
+h3 {
+  margin-top: 10px;
+}
+
+/* Add Task Button */
+.add-task-button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-task-button:hover {
+  background-color: #45a049;
+}
+
+/* Add Task Row */
+.add-task-row input,
+.add-task-row select {
+  width: 90%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.add-task-row button {
+  padding: 5px 10px;
+  margin: 2px;
+  background-color: #4caf50; /* Save button color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-task-row button:hover {
+  background-color: #45a049;
+}
+
+.add-task-row button:nth-child(2) {
+  background-color: #f44336; /* Cancel button color */
+}
+
+.add-task-row button:nth-child(2):hover {
+  background-color: #d32f2f;
+}
+
+/* Proper spacing for delete button */
+button {
+  padding: 5px 10px;
+  background-color: rgb(182, 180, 180);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+
+  

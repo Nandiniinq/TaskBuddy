@@ -1,0 +1,97 @@
+
+/* Task Manager Styling */
+.task-manager {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0 auto;
+  position: relative; /* Ensure positioning context for logout button */
+}
+
+/* TaskBuddy Header */
+.task-manager > header {
+  display: flex;
+  justify-content: space-between; /* Align title and logout button properly */
+  align-items: center;
+  width: 100%;
+}
+
+.task-manager > header img {
+  width: 40px; /* Icon width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.task-manager > header h1 {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Logout Button Styling */
+.logout-button {
+  position: absolute;
+  top: 60px; /* Move it below the header, align it with the toggle view buttons */
+  right: 20px;
+  padding: 10px 15px;
+  background-color: white !important;
+  color: black;
+  border: 1px solid #ccc !important; /* Grey border */
+  border-radius: 20px; /* Rounded corners */
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.logout-button:hover {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.logout-button:active {
+  background-color: #e1e1e1;
+}
+
+/* View Toggle Styles */
+.view-toggle {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  width: 100%; /* Allow buttons to stretch and align properly */
+}
+
+.view-toggle button {
+  padding: 10px 15px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  color: #000;
+  cursor: pointer;
+  transition: color 0.3s, border 0.3s;
+  box-shadow: none;
+  appearance: none;
+  outline: none;
+}
+
+.view-toggle button:disabled {
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Icon Styling */
+.view-toggle button img {
+  width: 20px;
+  margin-right: 8px;
+}
+
+/* Additional Global Button Styling Reset */
+button {
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}

@@ -1,0 +1,117 @@
+.task-board {
+  padding: 20px;
+}
+
+.task-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.todo-heading {
+  background-color: #FAC3FF;
+}
+
+
+.task-table th,
+.task-table td {
+  border: 1px solid #878383;
+  padding: 10px;
+  vertical-align: top; /* Aligns content at the top */
+}
+
+.task-table th {
+  background-color: #f4f4f4; /* Light background for headers */
+}
+
+.task-card {
+  background-color: #fff; /* White background for tasks */
+  border: 1px solid #ddd; /* Border around task cards */
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px; /* Space between task cards */
+}
+
+/* Tag styles */
+.tag {
+  display: inline-block;
+  background-color: #e0e0e0; /* Light gray for tags */
+  border-radius: 3px;
+  padding: 2px 5px;
+  margin-right: 5px;
+ } /* Space between tags */
+
+ .task-board {
+  padding: 20px;
+}
+
+.task-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 15px; /* Adds spacing between columns */
+}
+
+.task-table th {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.task-table th:nth-child(1) {
+  background-color: #FAC3FF; /* Orange for Todo */
+}
+.todo-heading {
+  background-color: #FAC3FF;
+}
+
+.task-table th:nth-child(2) {
+  background-color: #03a9f4; /* Blue for In-Progress */
+}
+
+.task-table th:nth-child(3) {
+  background-color: #4caf50; /* Green for Completed */
+}
+
+.task-card {
+  background-color: #f4f4f4;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+  position: relative; /* To position bottom section elements */
+}
+
+.tags {
+  margin-top: 10px;
+}
+
+.tag {
+  display: inline-block;
+  background-color: #e0e0e0;
+  color: #333;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  margin-right: 5px;
+}
+
+.bottom-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.work-type {
+  font-size: 14px;
+  color: #666;
+  font-weight: bold;
+}
+
+.due-date {
+  font-size: 14px;
+  color: #999;
+  font-weight: bold;
+}
